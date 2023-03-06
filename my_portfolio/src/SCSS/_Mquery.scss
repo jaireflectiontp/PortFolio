@@ -1,0 +1,84 @@
+@media only screen and (max-width: 480px) {
+
+    .intro,
+    .about {
+        display: block;
+    }
+
+    .intro {
+
+        .intro_left,
+        .intro_right {
+            width: 100%;
+        }
+
+        .intro_right {
+            box-shadow: 0 0 8px 1px inset #9370db;
+            border-radius: 5px;
+            padding: 35px 20px;
+
+            p {
+                text-align: justify;
+            }
+        }
+    }
+
+    .about {
+        .about_right {
+            display: none;
+        }
+
+        .about_left {
+            width: 100%;
+        }
+
+        .about_left {
+            height: fit-content;
+            box-shadow: 0 0 8px 1px inset #9370db;
+            border-radius: 5px;
+            padding: 20px !important;
+            gap: 10px;
+
+            p {
+                text-align: justify;
+            }
+
+            h3,
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .education_container {
+        display: block;
+
+        .edu_left,
+        .edu_right {
+            width: 100%;
+        }
+
+        .edu_right {
+            .education_board {
+                display: block;
+                height: auto;
+                text-align: center;
+
+                .board_logo {
+                    margin-left: 50%;
+                    transform: translateX(-50%);
+                }
+
+                .board_content {
+                    .educational_year {
+                        margin: auto;
+                    }
+                    .institution {
+                        font-size: 20px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}

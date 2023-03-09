@@ -1,16 +1,16 @@
-import React from 'react'
-import AboutImg from "../../imgs/introImg.png"
-import AboutPng from "../../imgs/about.webp"
-import AboutBanner from "../../imgs/about-banner.png"
-import EduLogo from "../../imgs/education logo.png"
-import htmlLogo from "../../imgs/html.svg"
-import cssLogo from "../../imgs/css.svg"
-import jsLogo from "../../imgs/js.png"
-import reactLogo from "../../imgs/React.png"
-import bootstrapLogo from "../../imgs/bootstrap.png"
-import sassLogo from "../../imgs/sass.svg"
-import nodejs from "../../imgs/nodejs.png"
-import "../../SCSS/_main.scss"
+import React from 'react';
+import AboutImg from "../../imgs/introImg.png";
+import AboutPng from "../../imgs/about.webp";
+import AboutBanner from "../../imgs/about-banner.png";
+import EduLogo from "../../imgs/education logo.png";
+import htmlLogo from "../../imgs/html.svg";
+import cssLogo from "../../imgs/css.svg";
+import jsLogo from "../../imgs/js.png";
+import reactLogo from "../../imgs/React.png";
+import bootstrapLogo from "../../imgs/bootstrap.png";
+import sassLogo from "../../imgs/sass.svg";
+import nodejs from "../../imgs/nodejs.png";
+import "../../SCSS/_main.scss";
 import "../../SCSS/_Mquery.scss"
 const Main = () => {
   return (

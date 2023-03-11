@@ -58,7 +58,7 @@ section {
             font-size: 25px;
             font-weight: 700;
             cursor: pointer;
-            background-color:inherit;
+            background-color: inherit;
             color: #9370db;
             border: 4px solid #9370db;
             margin-top: 30px;
@@ -71,7 +71,8 @@ section {
             transform: translate(2px 2px);
             border-color: #5a2e98;
         }
-        .download_btn a button:active{
+
+        .download_btn a button:active {
             box-shadow: 0px 0px 3px 1px #ffffff;
         }
     }
@@ -94,8 +95,6 @@ section {
         .section-heading {
             font-size: 50px;
             color: #9370db;
-            border-left: 10px solid #9370db;
-            padding-left: 15px;
         }
 
         h3,
@@ -127,8 +126,6 @@ section {
     .section-heading {
         font-size: 50px;
         color: #9370db;
-        border-left: 10px solid #9370db;
-        padding-left: 15px;
     }
 }
 
@@ -281,7 +278,7 @@ section {
                 position: relative;
 
                 input {
-                    width: 435px;
+                    width: 455px;
                     height: -webkit-fill-available;
                     background: none;
                     border: 4px solid #9370db;
@@ -358,17 +355,16 @@ section {
             }
 
             .send_btn {
+                text-align: end;
+
                 button {
-                    width: 235px;
-                    height: 60px;
                     border-radius: 30px;
-                    font-size: 25px;
-                    font-weight: 700;
                     background-color: inherit;
                     cursor: pointer;
                     color: #9370db;
                     border: 4px solid #9370db;
                     margin-top: 30px;
+                    transform: translateX(-50%);
                 }
 
                 button:hover {
@@ -378,7 +374,8 @@ section {
                     transform: translate(2px 2px);
                     border-color: #5a2e98;
                 }
-                 button:active{
+
+                button:active {
                     box-shadow: 0px 0px 3px 1px #ffffff;
                 }
             }
@@ -403,6 +400,10 @@ section {
                     color: silver;
                     margin: 20px 0;
                     padding: 10px 0;
+
+                    .info_icon {
+                        text-align: center;
+                    }
                 }
             }
 
@@ -411,24 +412,169 @@ section {
                 justify-content: center;
 
                 .social_links {
-                    width: 50px;
-                    height: 50px;
-                    background-color: #5a2e98;
-                    border-radius: 100%;
-                    display: grid;
-                    place-items: center;
                     margin: 0 20px;
                 }
 
-                .social_links:hover {
-                    box-shadow: 0 0 10px 5px #5a2e98;
-                    background-color: silver;
-                    transition: ease-in 0.3s;
-                    transform: scale(1.1);
+            }
+        }
+    }
+
+
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    .intro,
+    .about {
+        display: block;
+    }
+
+    .intro {
+
+        .intro_left,
+        .intro_right {
+            width: 100%;
+        }
+
+        .intro_right {
+            box-shadow: none;
+            border-radius: 5px;
+            padding: 35px 20px;
+
+            p {
+                text-align: justify;
+            }
+        }
+    }
+
+    .about {
+      
+        .about_right {
+            display: none;
+        }
+
+        .about_left {
+            width: 100%;
+            box-shadow: none;
+        }
+
+        .about_left {
+            height: fit-content;
+            border-radius: 5px;
+            padding: 20px !important;
+            gap: 10px;
+
+            p {
+                text-align: justify;
+            }
+
+            h3,
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .education_container {
+        display: block;
+
+        .edu_left,
+        .edu_right {
+            width: 100%;
+        }
+
+        .edu_right {
+            .education_board {
+                display: block;
+                height: auto;
+                text-align: center;
+
+                .board_logo {
+                    margin-left: 50%;
+                    transform: translateX(-50%);
+                }
+
+                .board_content {
+                    .educational_year {
+                        margin: auto;
+                    }
+
+                    .institution {
+                        font-size: 20px;
+                        font-weight: 400;
+                    }
                 }
             }
         }
     }
 
+    .skills .skill_sets {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 40px;
+
+        .skill_list {
+            width: auto;
+            height: auto;
+            margin: 0 20px;
+        }
+
+        .skill_list:nth-child(odd) {
+            margin-top: 0;
+        }
+    }
+
+    .contact {
+        .heading {
+            padding: 0;
+            text-align: center;
+        }
+
+        .contact_container {
+            width: 100%;
+            display: block;
+            text-align: center;
+
+            .connect_me,
+            .contact_details {
+                width: inherit;
+            }
+
+            .connect_me {
+
+                .input_controls input,
+                .msg_controls textarea {
+                    width: 100%;
+                    border: 2px solid #9370db;
+                }
+
+                .input_controls input:focus,
+                .msg_controls textarea:focus {
+                    box-shadow: none;
+                }
+
+            }
+
+            .contact_details {
+                .contact_info {
+                    .detail_container {
+                        border-bottom: 2px dotted #9370db;
+                        border-radius: 15px;
+                        box-shadow: 0px 3px 5px #91898954;
+
+                        .info_context {
+                            font-size: 16px;
+                            text-align: initial;
+                        }
+                    }
+
+                    .detail_container:hover {
+                        box-shadow: 0px 3px 5px #fff;
+                    }
+                }
+            }
+        }
+    }
 
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import Logo from "../../imgs/logo.gif";
 import "../../SCSS/_header.scss";
-import "../../SCSS/_Mquery.scss"
 const Header = () => {
   return (
     <header>

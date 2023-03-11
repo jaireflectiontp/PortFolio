@@ -13,7 +13,10 @@
         width: 100%;
     }
 }
-
+.navbar-toggler{
+    background-color: #9370db;
+    color: #ffffff;
+}
 .nav-item {
     position: relative;
     margin: 0 25px;
@@ -57,4 +60,15 @@
     .headerLink:hover::after {
         width: 100%;
     }
+}
+
+@media only screen and (max-width: 480px) {
+    .block-nav {
+       margin: 15px 0 !important;
+   }
+
+   .nav-item {
+       margin: 0 0 !important;
+   } 
+
 }
